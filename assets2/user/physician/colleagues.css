@@ -1,0 +1,75 @@
+/* Simple Tabs */
+.simple_tabs ul li{
+	display:inline-block;
+	color:#89c8e0;
+	font-size:14px;
+	padding:10px 15px 13px;
+	cursor:hand; cursor:pointer;
+	transition: all 0.25s ease 0s;
+}
+
+.simple_tabs ul li:hover{ color:#2d7fb2; }
+
+.simple_tabs ul li.active{
+	background:#2d7fb2;
+	color:#fff;
+	/*-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;*/
+}
+.simple
+_tabs ul li .fa{
+	margin-right:8px;
+	font-size:18px;
+	vertical-align:-2px;
+}
+
+/* FRIEND list */
+.heading-box{
+	background:#2d7fb2;
+	color:#fff;
+}
+
+.heading-box h4{
+	margin:0;
+}
+
+.tab_content .friends-list{
+	background:#fff;
+	padding:10px 0;
+	min-height:600px;
+}
+.tab_content .friend{
+	width:33.3334%;
+	float:left;
+}
+.tab_content .friend .friend_box{
+	border:1px solid #c1dce5;
+	margin:5px;
+	padding:10px;
+}
+.tab_content .friend .unfriend .fa{ 
+	color:#FD766F;
+	margin-left:6px;
+	cursor:hand; cursor:pointer;
+}
+.tab_content .friend .unfriend .fa:hover{ color:#BD362F; }
+.tab_content .friend img{
+	float:left;
+	margin-right:5px;
+}
+.tab_content .friend a .fullname{
+	font-size:14px;
+	color:#2d7fb2;
+	vertical-align:middle;
+	display:block;
+}
+.tab_content .friend .address{
+	font-size:12px;
+	color:#999;
+}
+.empty{
+	color:#999;
+	font-size:14px;
+	font-style:italic;
+}

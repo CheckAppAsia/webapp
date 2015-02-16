@@ -1,0 +1,1 @@
+<div class="col-sm-12" style="height:500px; background:#dfd;"><?php echo $content; ?></div>

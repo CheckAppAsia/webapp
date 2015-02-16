@@ -1,0 +1,19 @@
+.icd10_box{
+	margin:5px 0 20px;
+	display:block;
+}
+.search_display{
+	display:block;
+	margin-bottom:10px;
+	border:1px solid #2d7fb2;
+	background:#c1dce5;
+	padding:10px;
+	font-size:14px;
+	line-height:130%;
+}
+.search_display .fa-times{
+	cursor:hand; cursor:pointer;
+	margin-left:10px;
+	font-size:17px;
+}
+.search_display .fa-times:hover{ color:#BD362F; }

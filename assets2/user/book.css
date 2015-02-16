@@ -1,0 +1,9 @@
+.appointment-heading{ background:#277eb4; }
+.appointment-heading a, .appointment-heading span{
+	color:#fff;
+	font-size:14px;
+}
+
+.appointment-body{
+	background:#afdaea;
+}

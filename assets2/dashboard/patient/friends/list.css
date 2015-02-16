@@ -1,0 +1,39 @@
+.heading-box{
+	background:#2d7fb2;
+	color:#fff;
+}
+.heading-box h4{ margin:0; }
+.friends-list{
+	background:#fff;
+	padding:20px 0;
+	min-height:600px;
+}
+.friend{
+	width:33.3334%;
+	float:left;
+}
+.friend .friend_box{
+	border:1px solid #c1dce5;
+	margin:5px;
+	padding:10px;
+}
+.friend .unfriend .fa{ 
+	color:#FD766F;
+	margin-left:6px;
+	cursor:hand; cursor:pointer;
+}
+.friend .unfriend .fa:hover{ color:#BD362F; }
+.friend img{
+	float:left;
+	margin-right:5px;
+}
+.friend a .fullname{
+	font-size:14px;
+	color:#2d7fb2;
+	vertical-align:middle;
+}
+.empty{
+	color:#999;
+	font-size:14px;
+	font-style:italic;
+}

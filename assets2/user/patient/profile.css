@@ -1,0 +1,120 @@
+.tab-content{ background:#fff; }
+/*
+.row{ margin:0 -5px; }
+.form-control{
+	border:1px solid #eee;
+	color:#333;
+	padding:6px 12px;
+	height:34px;
+	outline:0;
+}
+*/
+
+.widget-head{ border-bottom:1px solid #eee; }
+.widget-head ul li a.glyphicons i:before {
+    font-size: 16px;
+    line-height: 37px;
+    padding: 0;
+    width: 38px;
+}
+
+/* DASHBOARD */
+.form_div{
+	background:#fff;
+	margin-bottom:10px;
+	padding:10px 10px 20px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.form_heading{
+	font-size:24px;
+	color:#323a45;
+	padding:5px 0;
+	border-bottom:2px solid #eaeaea;
+	margin-bottom:10px;
+}
+.form_label{
+	color:#777;
+	font-size:14px;
+	font-weight:700;
+	display:block;
+	margin-bottom:4px;
+}
+.form_text{
+	width:100%;
+	border:2px solid #eaedf1;
+	display:block;
+	color:#555;
+	font-size:15px;
+	padding:8px 10px;
+	background:#fafafa;
+	margin-bottom:15px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.form_textarea{
+	border:2px solid #eaedf1;
+	padding:5px;
+	width:100%;
+	min-height:100px;
+	font-size:14px;
+	color:#555;
+	margin-bottom:15px;
+}
+.form_text.active, .form_textarea.active{
+	border:2px solid #2D7FB2;
+	background:#fff;
+}
+.form_select{
+	width:100%;
+	display:block;
+	padding:10px 0;
+	margin-bottom:15px;
+	color:#444;
+	border:2px solid #eaedf1;
+}
+
+
+/*
+	TALK TO ROY IF YOU NEED THESE CSSs
+.add-btn-box{
+	background:#f8f8f8;
+	border-bottom:1px solid #eee;
+}
+.add-btn-box .btn{
+	padding:10px 15px;
+	height:auto;
+}
+.contact-box{
+	overflow:hidden;
+	zoom:1;
+	margin-top:10px;
+}
+.contact-box .btn{
+	padding:8px 10px;
+	height:auto;
+}
+.contact-box .thumb{ margin-right:10px; }
+.contact-box .media-body p{
+	font-size:13px;
+	line-height:140%;
+}
+
+.make-editable{
+	height:auto;
+	padding:5px 10px;
+	margin:10px;
+}
+*/
+
+/* View only */
+.book-btn{
+	height:auto;
+	width:100%;
+	padding:15px;
+	margin-bottom:10px;
+}
+.view-only .info{ font-size:14px; }
+.view-only .info label{ color:#9ab; }

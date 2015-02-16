@@ -1,0 +1,24 @@
+.medical-records, .tab-content{
+	background:#fff;
+}
+.tab-content .heading h4{ line-height:40px; }
+.tab-content .heading .btn{
+	padding:7px 10px;
+	height:auto;
+}
+
+.view-record-details{
+	height:auto;
+	padding:3px 6px;
+	border-color:#6bb4d5!important;
+}
+.tab-content .media-body h4{
+	font-size:14px;
+	font-weight:bold;
+}
+.tab-content .media-body ul{
+	font-size:13px;
+	line-height:145%;
+}
+
+.health-profile-data div{ margin-bottom:10px; }

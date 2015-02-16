@@ -1,0 +1,34 @@
+body{ background:#f8f8f8; }
+.col-sm-2, .col-sm-3, .col-sm-6, .col-sm-9, .col-sm-10, .col-sm-12, .col-md-2, .col-md-3, .col-md-6, .col-md-9, .col-md-10, .col-md-12, .col-lg-2, .col-lg-3, .col-lg-6, .col-lg-9, .col-lg-10, .col-lg-12 { padding: 0 10px; }
+
+/* Img Slide */
+.box-slide{
+	background:#ccc;
+	height:400px;
+	margin-top:10px;
+}
+
+/* Sign up form */
+.sign-up-form{ margin-top:10px; }
+.sign-up-form .controls{ margin-bottom:10px; }
+.require-field{ background:#fcc; }
+.form-warning{
+	font-size:12px;
+	font-style:italic;
+	color:#f00;
+}
+.controls .radio{ margin-bottom:5px; }
+.sign-up-form .btn{ height:30px; }
+.error-box{
+	background:#fcc;
+	margin:10px 0;
+	border:1px solid #f66;
+	color:#f00;
+	font-size:14px;
+}
+
+/* Search */
+.col-md-12.search{ margin-top:10px; }
+.search .input-tx{ height:40px; }
+.search .btn{ margin:0; }
+

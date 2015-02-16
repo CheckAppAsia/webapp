@@ -1,0 +1,17 @@
+/* Sign up form */
+.sign-up-form .controls{ margin-bottom:10px; }
+.require-field{ background:#fcc; }
+.form-warning{
+	font-size:12px;
+	font-style:italic;
+	color:#f00;
+}
+.controls .radio{ margin-bottom:5px; }
+.sign-up-form .btn{ height:30px; }
+.error-box{
+	background:#fcc;
+	margin:10px 0;
+	border:1px solid #f66;
+	color:#f00;
+	font-size:14px;
+}

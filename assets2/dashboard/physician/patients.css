@@ -1,0 +1,74 @@
+.tab-content{ background:#fff; }
+.media .profile-img{
+	width:60px;
+}
+.media-body h4{ font-size:21px; }
+.media-body .last-appointment{
+	font-size:14px;
+	line-height:120%;
+}
+.media-body .last-appointment label{
+	color:#aaa;
+	margin-right:5px;
+}
+.media-body .last-appointment .date{ color:#BD362F; }
+.media-body .last-appointment .date{ color:#BD362F; }
+
+/* List */
+.list-patients { 
+	background:#fff; 
+	min-height: 600px;
+}
+.list-patients a .media-body h4{ color:#2d7fb2; }
+
+.add-patient .form-group{
+	margin-bottom:10px;
+	display:block;
+}
+.add-patient .form-group label{
+	padding:7px 10px 0;
+	line-height:130%;
+	text-align:right;
+}
+.add-patient .form-control{
+	border-color:#aaa;
+}
+.add-patient .form-group .form-control{
+	height:auto;
+	font-size:13px;
+	padding:5px 12px;
+	margin:0;
+}
+.add-patient .form-group select.form-control{ width:100%; }
+.add-patient .form-group .input-group span{
+	padding:4px 7px;
+	border-color:#aaa;
+}
+.add-patient .submit{
+	padding:6px 15px;
+	height:auto;
+}
+
+
+.message-all .heading span.glyphicons{
+	font-size:14px;
+	padding:0;
+}
+.message-all .heading span i:before{
+	position:relative;
+	font-size:14px;
+	
+}
+
+
+.message-all .input-group .form-control{
+	height:auto;
+	font-size:13px;
+	padding:7px 12px;
+	margin:0;
+	border:1px solid #eee;
+}
+
+.nav_fullw .space-tab {
+	padding-right: 170px;
+}

@@ -1,0 +1,45 @@
+.availability_box{
+	padding:20px 0;
+	background:#fff;
+}
+
+.add_avail_box{
+	padding:10px;
+	border:1px dashed #bbb;
+	background:#fafafa;
+	margin-bottom:20px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.add_avail_box .form_label{
+	color:#555;
+	font-size:13px;
+}
+.av_dates{ margin-bottom:10px; }
+.av_dates li{
+	float:left;
+	margin:2px 20px 5px 5px;
+}
+.av_dates li input{
+	vertical-align:-2px;
+	margin-right:5px;
+}
+#av_time{
+	color:#1C72A7;
+	border:none;
+	font-weight:700;
+}
+#slider-range{
+	margin-bottom:30px;
+	position:relative;
+}
+#slider-range label{
+	position: absolute;
+    width: 20px;
+    margin-left: -10px;
+    text-align: center;
+    margin-top: 15px;
+	font-size:12px;
+	color:#888;
+}

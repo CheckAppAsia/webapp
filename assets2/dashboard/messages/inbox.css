@@ -1,0 +1,109 @@
+.messaging.widget-head{ border-bottom:1px solid #eee; }
+.messages-box{ background:#fff; }
+
+.label{ display:inline-block; }
+.label-default{ background-color: #999; }
+.top-notify{ font-size:13px; }
+.top-notify b{ color:#f00; }
+
+.widget-body .list-group{
+	border:1px solid #ccc;
+	overflow:hidden;
+}
+.widget-body .list-group-item{
+	border:none;
+	border-bottom:1px solid #ccc;
+    cursor:pointer;
+	margin:0;
+}
+.message-list .widget-body .active{
+	background-color: #6ca6ca;
+    color:#333;
+	border-top:1px solid #2d7fb2;
+	border-bottom:1px solid #2d7fb2;
+}
+.message-list .widget-body .unseen{
+	background-color:#f5f5f5;
+}
+.timestamp{
+	font-size:12px;
+	color:#999;
+}
+.message-list .avatar-box{ margin-right:10px; }
+.message-list .username{
+	font-weight:700;
+	font-size:14px;
+	display:block;
+	margin-bottom:3px;
+	color:#444;
+}
+.message-list .subject{
+	font-size:14px;
+	color:#777;
+}
+.message-list .widget-body .active *{
+	color:#fff;
+}
+
+
+.message-content {
+	border:1px solid #ccc;
+	min-height:400px;
+}
+.message-content .reply{
+	padding-bottom:10px;
+	border-bottom:1px solid #ddd;
+}
+.message-content .reply .form-control{
+	border-color:#aaa;
+	margin-bottom:3px;
+}
+.msgcontainer{
+	padding:15px 0;
+	font-size:14px;
+	border-bottom:1px solid #f3f3f3;
+}
+.msgcontainer .avatar{
+	width:35px;
+	margin-right:5px;
+}
+.msgcontainer .username{
+	font-weight:700;
+	margin-bottom:3px;
+	display:block;
+}
+.msgcontainer p{
+}
+
+/* do we use this?? 
+.message-content .action a{
+	line-height:28px;
+	height:30px;
+}
+.message-content .action a:hover{
+	background:#277eb4;
+	border-color:#277eb4;
+}
+.message-content .action a:hover i{
+	color:#fff;
+}
+*/
+
+
+.message-content .from{
+	font-size:13px;
+	font-style:italic;
+	line-height:130%;
+	margin-bottom:10px;
+}
+.message-content .from a{
+	color:#A37762;
+	font-weight:800;
+	font-style:normal;
+}
+
+.message-body p{
+	line-height:140%;
+	font-size:13px;
+	margin-bottom:10px;
+}

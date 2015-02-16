@@ -1,0 +1,457 @@
+.appoint-tabs ul li{
+	display:inline-block;
+	color:#89c8e0;
+	font-size:14px;
+	padding:10px 15px 13px;
+	cursor:hand; cursor:pointer;
+	transition: all 0.25s ease 0s;
+}
+.appoint-tabs ul li:hover{ color:#2d7fb2; }
+.appoint-tabs ul li.active{
+	background:#2d7fb2;
+	color:#fff;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+.appoint-tabs ul li .fa{
+	margin-right:8px;
+	font-size:18px;
+	vertical-align:-2px;
+}
+
+/*
+	DAILY
+*/
+.appointment-heading{ background:#277eb4; }
+.appointment-heading a, .appointment-heading span{
+	color:#fff;
+	font-size:14px;
+}
+.appointment-body{ background:#c1dce5; }
+/* -- Timeline Appointment */
+.timeline-appointments > li{
+	background: #fff;
+	margin-left: 90px;
+	border-left: 1px solid #2d7fb2;
+	position: relative;
+}
+.timeline-appointments > li:first-of-type{ padding-top: 30px; }
+.timeline-appointments > li .time{
+	position: absolute;
+	left: -90px;
+	top: -5px;
+	width: 70px;
+	text-align: right;
+	color: #444;
+	font-size:13px;
+}
+.timeline-appointments li.occupied .time{
+	font-weight:700;
+	color:#000;
+}
+.timeline-appointments > li .time span{ color:#2d7fb2; }
+.timeline-appointments > li:first-of-type .time{ top: 25px; }
+.timeline-appointments > li .dot {
+	position: absolute;
+	left: -8px;
+	top: -6px;
+	background: #fff;
+	-webkit-border-radius: 50% 50% 50% 50%;
+	-moz-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
+	color:#2d7fb2;
+}
+.timeline-appointments > li:first-of-type .dot{ top: 24px; }
+.timeline-appointments > li .appointments {
+	min-height: 60px;
+	background: -webkit-linear-gradient(top, #f0f0f0 0%, #ffffff 5%) 0 0;
+	background: -moz-linear-gradient(top, #f0f0f0 0%, #ffffff 5%) 0 0;
+	background: linear-gradient(top, #f0f0f0 0%, #ffffff 5%) 0 0;
+	-webkit-background-size: 100% 30px;
+	-moz-background-size: 100% 30px;
+	-ms-background-size: 100% 30px;
+	background-size: 100% 30px;
+}
+.timeline-appointments li.occupied .appointments li.active{
+	cursor:hand; cursor:pointer;
+	background: -webkit-linear-gradient(top, #fff 0%, #C1E4F1 5%) 0 0;
+	background: -moz-linear-gradient(top, #fff 0%, #C1E4F1 5%) 0 0;
+	background: linear-gradient(top, #fff 0%, #C1E4F1 5%) 0 0;
+	-webkit-background-size: 100% 30px;
+	-moz-background-size: 100% 30px;
+	-ms-background-size: 100% 30px;
+	background-size: 100% 30px;
+}
+.timeline-appointments > li .appointments ul li {
+	line-height: 30px;
+	padding: 0 10px;
+}
+.timeline-appointments > li .appointments ul li .apt {
+	display: block;
+	height:30px;
+	overflow:hidden;
+	line-height: 30px;
+	font-size:14px;
+}
+.timeline-appointments > li .appointments ul li .apt .patient_note {
+	font-size:12px;
+	color:#000;
+}
+.timeline-appointments > li .appointments ul li .apt img{
+	width:20px;
+	height:20px;
+	margin-left:5px;
+	vertical-align:middle;
+	cursor:hand; cursor:pointer;
+	border:1px solid transparent;
+}
+.timeline-appointments > li .appointments ul li .apt img.active{
+	border:1px solid #fff;
+	-moz-box-shadow:1px 1px 1px rgba(0,0,0, .35);
+	-webkit-box-shadow:1px 1px 1px rgba(0,0,0, .35);
+	box-shadow:1px 1px 1px rgba(0,0,0, .35);
+}
+.text-faded{ color:#d7d7d7; }
+#appoint-action{
+	background:#fff;
+	display:inline-block;
+	position:absolute;
+	display:none;
+	border:1px solid #2d7fb2;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	-moz-box-shadow:1px 2px 3px rgba(0,0,0, .35);
+	-webkit-box-shadow:1px 2px 3px rgba(0,0,0, .35);
+	box-shadow:1px 2px 3px rgba(0,0,0, .35);
+}
+#appoint-action .arrow-up{
+	position:absolute;
+	top:-20px;
+	left:5px;
+	display:inline;
+	border-top:10px solid transparent;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-bottom:10px solid #2d7fb2;
+}
+#appoint-action a{
+	display:block;
+	padding:10px;
+	color:#555;
+	font-size:14px;
+	cursor:pointer; cursor:hand;
+}
+#appoint-action a .fa{
+	color:#999;
+	margin-right:8px;
+}
+#appoint-action a:hover{ background:#2d7fb2; }
+#appoint-action a:hover, #appoint-action a:hover .fa{ color:#fff; }
+/* lightbox - reschedule */
+.lightbox.reschedule .from_to{
+	color:#999;
+	font-size:18px;
+	font-style:italic;
+	display:block;
+	padding-bottom:5px;
+}
+
+
+/*
+	Monthly
+*/
+.table-calendar{
+	background:#fff;
+	width:100%;
+	margin:10px 0;
+	border:1px solid #2d7fb2;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.table-calendar thead td{
+	padding:8px 0;
+	text-align:center;
+	color:#777;
+}
+.cal-navi .prev, .cal-navi .next{
+	font-size:21px;
+	cursor:pointer;
+	cursor:hand;
+}
+.cal-navi .prev:hover, .cal-navi .next:hover{ color:#000; }
+tr.days-text td{
+	background:#2d7fb2;
+	color:#fff;
+	padding:8px 0;
+}
+.table-calendar tbody td{
+	cursor:hand; cursor:pointer;
+	color:#555;
+	text-align:center;
+	padding:15px 0;
+	position:relative;
+	border-bottom:1px solid #89c8e0;
+	border-right:1px solid #89c8e0;
+}
+.table-calendar tbody td:last-child{ border-right:0; }
+.table-calendar tbody tr:last-child td{ border-bottom:0; }
+.table-calendar tbody td.today{ background:#2d7fb2; }
+.table-calendar tbody td.today a .days-num{ color:#fff; }
+.table-calendar tbody td .days-num{
+	float:right;
+	color:#555;
+	font-size:13px;
+	font-family:verdana;
+	margin:0 8px 10px 0;
+}
+.table-calendar tbody td.has-apt{
+	color:#fff;
+	background:#89c8e0;
+	text-shadow:1px 1px 1px rgba(0,0,0, .35);
+}
+.table-calendar tbody td.day-off{
+	color:#aaa;
+	background:rgba(0,0,0,.07);
+}
+.legends{
+	padding:5px;
+	background:#fff;
+	border:1px solid #2d7fb2;
+	border-left:6px solid #2d7fb2;
+	border-right:6px solid #2d7fb2;
+}
+.legend{
+	margin:0 10px;
+	font-size:12px;
+	height:15px;
+	display:inline-block
+}
+.indicator{
+	width:15px;
+	height:15px;
+	display:inline-block;
+	vertical-align:text-bottom;
+	margin-right:3px;
+}
+.indicator.day-off{
+	border:1px solid #ccc;
+	background:#EDEDED;
+}
+.indicator.has-appoint{
+	border:1px solid #2d7fb2;
+	background:#89c8e0;
+}
+.monthly-statistics{
+	border:1px solid #777;
+	text-align:center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+}
+.monthly-statistics .top{
+	border-bottom:1px solid #777;
+	padding:20px 0;
+}
+.monthly-statistics .main .amount{
+	font-size:52px;
+	color:#555;
+	display:block;
+	margin-bottom:4px;
+}
+.monthly-statistics .main label{
+	font-size:14px;
+	font-weight:100;
+}
+.monthly-statistics .bottom .sub{ padding:20px 0; }
+.monthly-statistics .bottom .sub.accepted{
+	border-right:1px solid #777;
+	color:#2d7fb2;
+}
+.monthly-statistics .sub.accepted .amount{ color:#2d7fb2; }
+.monthly-statistics .bottom .sub.declined, .monthly-statistics .sub.declined .amount{ color:#BD362F; }
+
+
+/*
+	Previous
+*/
+.heading-box{
+	background:#2d7fb2;
+	color:#fff;
+}
+.heading-box h4{
+	margin:0;
+	font-size:14px;
+	font-weight:800;
+}
+
+.previous{
+	background:#fff;
+	min-height:600px;
+}
+.previous .day{ margin-bottom:30px; }
+.previous .date{
+	border-bottom:1px solid #ccc;
+	padding:0 0 10px;
+}
+.previous .date .days{
+	font-size:52px;
+	color:#555;
+	margin-right:7px;
+	float:left;
+}
+.previous .date .weekday{
+	display:block;
+	color:#555;
+	font-size:21px;
+	font-weight:700;
+	margin:5px 0 2px;
+}
+.previous .date .month-year{
+	color:#999;
+	font-size:18px;
+}
+.previous ul li{ border-bottom:1px solid #eee; }
+.previous ul li:hover{ background:#f5f5f5; }
+.previous ul li.on_hold{
+	background:#ddd;
+}
+.previous ul li .diagnosis-result{
+	margin-top:5px;
+	height:auto;
+	padding:5px 10px;
+}
+.previous ul li img{
+	width:60px;
+	margin-right:10px;
+}
+.previous ul li .patient{
+	display:block;
+	font-size:17px;
+	margin-bottom:1px;
+	color:#2d7fb2;
+}
+.previous ul li .test{
+	display:block;
+	font-size:14px;
+	font-weight:700;
+	margin-bottom:1px;
+}
+.previous ul li .clinic{
+	display:block;
+	font-size:14px;
+}
+.previous ul li .arrival{
+	font-size:12px;
+	color:#999;
+}
+.previous ul li .arrival .fa{ margin-right:2px; }
+.previous ul li .status{
+	font-size:14px;
+	color:#000;
+	font-weight:bold;
+	margin:10px 0px 0px 0px;
+}
+
+/*
+	Pending
+*/
+.appoint-pending .empty{
+	padding:10px;
+	font-style:italic;
+	display:block;
+}
+.pending-list{
+	padding:20px 10px;
+	background:#fff;
+	min-height:600px;
+}
+.pending-list ul{ border-top:1px solid #eee; }
+.pending-list li{
+	padding:15px 10px;
+	border-bottom:1px solid #eee;
+}
+.pending-list .btn{
+	margin:0 5px;
+}
+.pending-list .avatar{
+	width:50px;
+	float:left;
+	margin-right:5px;
+}
+.pending-list .patient-info a{
+	color:#2d7fb2;
+	font-weight:700;
+}
+.pending-list .patient-info span{
+	display:block;
+}
+.pending-list .patient-info .date{
+	font-size:14px;
+	color:#777;
+	margin:2px 0;
+}
+.pending-list .patient-info .clinic{
+	font-size:14px;
+	color:#777;
+}
+
+/*
+	Availability
+*/
+.availability{
+	min-height:600px;
+	background:#fff;
+}
+.days_week{ margin-top:20px; }
+.days_week_check{
+	margin:5px 0;
+	font-size:14px;
+	font-weight:100;
+}
+
+/*
+	Create
+*/
+.create_form {
+	min-height:600px;
+	background:#fff;
+}
+.create_form .patient_pic{ margin:0 10px 15px 0; }
+.create_form .patient_fullname{ display:block; }
+.availability_table{
+	width:90%;
+	margin:0 auto;
+	border:1px solid #ccc;
+}
+.availability_table thead td{
+	text-align:center;
+	font-size:14px;
+	padding:10px;
+}
+.availability_table tbody td{
+	text-align:right;
+	font-size:12px;
+	padding:5px;
+}
+.availability_table td{
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.availability_table td.droppable{
+	cursor:hand; cursor:pointer;
+	background-color:#f5f5f5;
+}
+
+.selection {
+	position: absolute;
+	border: 2px solid #e5e31b;
+	background: #fffe95;
+}
+.availability_table .active{ 
+	background:#89c8e0;
+}
+.availability_table td.dropped{
+	background-color: #2d7fb2;
+}

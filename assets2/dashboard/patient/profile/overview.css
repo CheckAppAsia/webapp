@@ -1,0 +1,74 @@
+.overview_profile{
+	background:#fff;
+	padding:20px 0;
+}
+
+
+/* * * * * * * *
+	Basic INFO
+* * * * * * * * */
+.op_avatar{
+	overflow:hidden;
+	text-align:center;
+}
+.op_avatar img{
+	-webkit-border-radius:150px;
+	-moz-border-radius:150px;
+	border-radius:150px;
+}
+.op_basic{ color:#2F2E2C; }
+.op_basic span{
+	font-size:14px;
+	display:block;
+	margin-bottom:10px;
+}
+.op_basic .fname{
+	font-size:34px;
+	margin-bottom:15px;
+}
+.op_basic span i{
+	width:25px;
+	height:25px;
+	font-size:16px;
+	text-align:center;
+	line-height:25px;
+	margin:0 5px 0;
+	color:#fff;
+	vertical-align:middle;
+	background:#2F2E2C;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+}
+.op_basic .gender{ text-transform:capitalize; }
+
+.op_medinfo {
+	padding: 0 25px 10px; 
+}
+
+.op_medinfo_header {
+	color:#999;
+	padding-bottom:15px;
+}
+
+.op_medinfo_subheader {
+	color:#999;
+	font-size:100%;
+	font-weight:bold;
+}
+
+.op_medinfo_content {
+	font-size:100%;
+	padding-bottom:15px;
+	color:#333;
+	text-align:justify;
+}
+
+
+/* * * * * * * *
+	Contact
+* * * * * * * * */
+.op_contacts .contact{
+	float:left;
+	width
+}

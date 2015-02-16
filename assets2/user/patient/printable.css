@@ -1,0 +1,42 @@
+.medical_cert .certs{
+	border:1px solid #eee;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.medical_cert .empty{ font-size:12px; }
+
+.per_page{
+	font-size:14px;
+	margin-bottom:10px;
+}
+.per_page select{ padding:5px 0; }
+
+table.simple_table{
+	width:100%;
+	border:1px solid #ccc;
+}
+table.simple_table thead td{
+	background:#484946;
+	color:#fff;
+	font-size:14px;
+}
+table.simple_table td span{
+	display:block;
+	padding:5px;
+}
+table.simple_table tbody tr{
+	border-bottom:1px solid #ccc;
+	font-size:12px;
+}
+table.simple_table tr.odd td{ background:#F3F3F3; }
+table.simple_table tr.even td{ background:#FCFCFC; }
+
+.imaging{ margin-bottom:40px; }
+.doctor_referral .doctor_box{
+	border:1px solid #eee;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.doctor_box .empty{ font-size:12px; }

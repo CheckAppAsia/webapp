@@ -1,0 +1,353 @@
+[appointment]
+id =pk,i,us,ai
+physician_id =i,us
+patient_id =i,us
+schedule =dt
+end_time =dt
+patient_note =tx
+diagnosis =tx
+status =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[appointment_meds]
+id =pk,i,us,ai
+appointment_id =i,us
+medicine =tx
+notes =tx
+amount_left =i,us
+start_time =dt,d0
+interval_hr =i,us
+notification =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[appointment_record]
+id =pk,i,us,ai
+appointment_id =i,us
+record_name =tx
+notes =tx
+created =ts,ct
+updated =ts,uc,d0
+
+[country]
+country_id =pk,i,us,3
+name =vc,50
+active =bo
+
+[institution]
+id =pk,i,us
+name =vc,255
+description =tx
+address =tx
+landline1 =vc,30
+landline2 =vc,30
+mobile1 =vc,30
+mobile2 =vc,30
+coord_lat =db
+coord_lng =db
+profile_pic =vc,255
+updated =ts,uc,ct
+
+[institution_admin]
+user_id =pk,i,us
+institution_id =pk,i,us
+
+[institution_labs]
+institution_id =pk,i,us
+record_type =pk,i,us
+created =ts,ct
+
+[institution_physicians]
+institution_id =pk,i,us
+physician_id =pk,i,us
+approver_id =i,us
+since =vc,50
+position =vc,100
+visible_name =vc,100
+status =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[institution_services]
+id =pk,i,us,ai
+institution_id =i,us
+name =vc,200
+created =ts,ct
+
+[patient_exams]
+id =pk,i,us,ai
+user_id =i,us
+type =i,us
+title =vc,200
+summary =vc,200
+contents =tx
+date_taken =dt
+attachment =tx
+created =ts,ct
+updated =ts,uc,d0
+
+[patient_health]
+user_id =pk,i,us
+health_id =pk,i,us
+value =vc,200
+created =ts,ct
+updated =ts,uc,d0
+
+[patient_profile]
+user_id =pk,i,us
+family_history =tx
+known_allergies =tx
+other =tx
+updated =ts,uc,ct
+
+[physician_clinic]
+id =pk,i,us,ai
+physician_id =i,us
+name =vc,200
+description =tx
+num_landline =vc,30
+num_phone =vc,30
+address =tx
+coord_lat =db
+coord_lng =db
+created =ts,ct
+updated =ts,uc,d0
+
+[physician_clinic_labs]
+clinic_id =pk,i,us
+record_type =pk,i,us
+created =ts,ct
+
+[physician_documents]
+id =pk,i,us,ai
+physician_id =i,us
+type =i,us
+file =tx
+status =i,u,1
+created =ts,ct
+updated =ts,uc,d0
+
+[physician_patients]
+physician_id =pk,i,us
+patient_id =pk,i,us
+created =ts,ct
+
+[physician_profile]
+user_id =pk,i,us
+about =tx
+specializations =tx
+license_no =vc,100
+updated =ts,uc,d0
+
+[physician_school]
+id =pk,i,us,ai
+user_id =i,us
+course =vc,200
+school_name =vc,200
+year_start =vc,4
+year_end =vc,4
+comments =tx
+created =ts,ct
+updated =ts,uc,d0
+
+[physician_secretary]
+user_id =pk,i,us
+physician_id =pk,i,us
+clinic_id =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[post]
+id =pk,i,us,ai
+user_id =i,us
+target_type =i,us
+target_id =i,us
+message =tx
+attach_type =i,us
+attach_data =tx
+privacy =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[post_comment]
+id =pk,i,us,ai
+post_id =i,us
+user_id =i,us
+message =tx
+created =ts,ct
+updated =ts,uc,d0
+
+[post_like]
+post_id =pk,i,us
+user_id =pk,i,us
+created =ts,ct
+
+[physician_settings]
+physician_id =pk,i,us
+avail_sun =bo
+avail_mon =bo
+avail_tue =bo
+avail_wed =bo
+avail_thu =bo
+avail_fri =bo
+avail_sat =bo
+hour_start =i,us
+hour_end =i,us
+updated =ts,uc,d0
+
+[questionnaire]
+id =pk,i,us,ai
+physician_id =i,us
+name =vc,200
+type =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[questionnaire_answer]
+user_id =pk,i,us
+question_id =pk,i,us
+answer =tx
+created =ts,ct
+updated =ts,uc,d0
+
+[questionnaire_item]
+questionnaire_id =pk,i,us
+question_id =pk,i,us
+
+[questionnaire_question]
+id =pk,i,us,ai
+type =i,us
+isDefault =bo
+question =tx
+created =ts,ct
+
+[thread]
+id =pk,i,us,ai
+type =i,us,1
+type_id =i,us
+user_id_1 =i,us
+user_id_2 =i,us
+subject =tx
+user_read_1 =i,u,1
+user_read_2 =i,u,1
+created =ts,ct
+updated =ts,uc,d0
+
+[thread_message]
+id =pk,i,us,ai
+thread_id =i,us
+user_from =i,us
+user_to =i,us
+message =tx
+status =i,us, 1
+created =ts,ct
+
+[user]
+id =pk,i,us,ai
+type  =i,us
+email = vc,200
+username = vc,32
+password = vc,32
+activity = ts, uc
+created =ts,ct
+updated =ts,uc,d0
+
+[user_friends]
+user_id_1 =pk,i,us
+user_id_2 =pk,i,us
+status_1 =i,us
+status_2 =i,us
+type =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[user_notifications]
+id =pk,i,us,ai
+user_id =i,us
+type =i,us
+data =tx
+created = ts,ct
+is_read =bo
+
+[user_profile]
+user_id =pk,i,us
+title =vc,50
+first_name =vc,200
+middle_name =vc,200
+last_name =vc,200
+address1 =tx
+address2 =tx
+gender =i,us
+birthdate =dt
+num_landline =vc,30
+num_phone1 =vc,30
+num_phone2 =vc,30
+c_skype =vc,100
+c_msn =vc,100
+c_yahoo =vc,100
+c_gtalk =vc,100
+coord_lat =db
+coord_lng =db
+profile_pic =vc,255
+completion =i,us
+updated =ts,uc,ct
+
+[user_settings]
+user_id =pk,i,us
+setting_id =pk,i,us
+value =vc,100
+updated =ts,uc,ct
+
+[user_subscribe]
+user_id =pk,i,us
+physician_id =pk,i,us
+created =ts,ct
+
+[user_verifications]
+user_id =i,us,pk
+type =i,us
+code =vc,500
+status =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[user_widgets]
+user_id =pk,i,us
+widget_id  =pk,i,us
+sort_num =i,us
+created =ts,ct
+updated =ts,uc,d0
+
+[var_settings]
+id =pk,i,us,ai
+type =i,us
+name =vc,100
+created =ts,ct
+updated =ts,uc,d0
+
+[var_exams]
+id =pk,i,us,ai
+type =i,us
+name =vc,100
+created =ts,ct
+updated =ts,uc,d0
+
+[var_widgets]
+id =pk,i,us,ai
+type =i,us
+name =vc,100
+created =ts,ct
+updated =ts,uc,d0
+
+[var_questionnaire]
+id =pk,i,us,ai
+name =vc,100
+created =ts,ct
+updated =ts,uc,d0
+
+[var_health]
+id =pk,i,us,ai
+name =vc,100
+created =ts,ct
+updated =ts,uc,d0

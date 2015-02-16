@@ -1,0 +1,128 @@
+.edit_widget{
+	background:#fff;
+	position:relative;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	border-radius:5px;
+}
+.edit_widget .edit{
+	padding:10px;
+	cursor:hand; cursor:pointer;
+}
+.edit_widget .options{
+	position:absolute;
+	background:#fff;
+	width:200px;
+	top:100%;
+	right:0;
+	z-index:2;
+}
+.edit_widget .options li{
+	font-size:14px;
+	border-bottom:1px solid #eee;
+}
+.edit_widget .options li label{
+	cursor:hand; cursor:pointer;
+	display:block;
+	padding:5px 10px;
+}
+.edit_widget .options li input{ vertical-align:-1px; }
+.edit_widget .options li button{ margin:5px 10px; }
+
+.simple_data{ padding:5px; }
+.simple_data .data_icon{
+	float:left;
+	width:80px;
+	height:80px;
+	background:#ccc;
+	text-align:center;
+}
+.simple_data .data_icon .fa{
+	color:#fff;
+	font-size:40px;
+	line-height:80px;
+}
+.simple_data .data_icon.blue_green{ background:#6FCAC9; }
+.simple_data .data_icon.red{ background:#FD6B60; }
+.simple_data .data_icon.yellow{ background:#F8D347; }
+.simple_data .data_icon.blue{ background:#57C8F2; }
+.simple_data .data_text{
+	background:#fff;
+	height:80px;
+	width:100%;
+	text-align:center;
+	color:#999;
+}
+.simple_data .data_amount{
+	display:block;
+	font-size:24px;
+	padding:8px 0 0;
+}
+.simple_data .data_label{
+	display:block;
+	padding:7px 0px 0px 0px;
+	font-size:13px;
+}
+.simple_data .data_widget_name {
+	font-weight:bold;
+}
+
+/* blood pressure */
+.blood_pressure .box{
+	background:#fff;
+	padding:10px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	border-radius:5px;
+}
+.blood_pressure .box .title{
+	font-weight:700;
+	font-size:21px;
+	display:block;
+	margin-bottom:2px;
+}
+.blood_pressure .box .date{
+	color:#aaa;
+	font-size:12px;
+	display:block;
+	margin-bottom:10px;
+}
+.blood_pressure .box .value{ margin:10px 0; }
+.blood_pressure .box .value .fa{
+	font-size:42px;
+	float:left;
+	margin-right:10px;
+}
+.blood_pressure .box .value.systolic .fa{ color:#FD6B60; }
+.blood_pressure .box .value.diastolic .fa{ color:#57C8F2; }
+.blood_pressure .box .value.pulse .fa{ color:#6FCAC9; }
+.blood_pressure .box .value .label{
+	float:left;
+	text-align:right;
+	color:#aaa;
+}
+.blood_pressure .box .value .label span{
+	font-size:21px;
+	display:block;
+}
+.blood_pressure .box .value .label label{
+	font-size:12px;
+	font-weight:100;
+}
+.blood_pressure .box .amount{
+	float:right;
+	font-size:34px;
+	color:#999;
+}
+.blood_pressure .systolic .amount{ color:#FD6B60; }
+.blood_pressure .diastolic .amount{ color:#57C8F2; }
+.blood_pressure .pulse .amount{ color:#6FCAC9; }
+
+/*edit widgets*/
+.edit_widgets {
+	
+}
+.edit_widgets .edit_icon {
+	cursor:hand;
+	cursor:pointer;
+}

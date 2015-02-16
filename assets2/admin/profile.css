@@ -1,0 +1,60 @@
+.user_view{
+	background:#fff;
+	border:2px solid #9ea7b3;
+	padding-bottom:10px;
+}
+.user_view h4{
+	padding:10px;
+}
+.user_view .left, .user_view .right{
+	padding:0 10px;
+}
+
+.user_view .left .profile_pic{
+	border:1px solid #323a45;
+	width:100%;
+}
+.user_view .left .profile_pic img{
+	width:100%;
+	display:block;
+}
+
+.tab_head{ list-style:none; }
+.tab_head li{
+	float:left;
+	width:25%;
+	font-size:15px;
+	color:#fff;
+	background:#9ea7b3;
+	padding:10px 0 4px;
+	text-align:center;
+	cursor:hand;cursor:pointer;
+	-webkit-border-radius:12px 12px 0 0;
+	-moz-border-radius:12px 12px 0 0; 
+	border-radius:12px 12px 0 0;
+}
+.tab_head li.active{
+	background:#323A45;
+	color:#fff;
+}
+.tab_body{
+	clear:both;
+	background:#323A45;
+}
+.tab_body .content{
+	background:#fff;
+	min-height:150px;
+}
+.tab_body .content label{
+	display:block;
+	color:#aaa;
+	margin:0 0 2px;
+}
+.tab_body .info_data{
+	display:block;
+	padding:2px;
+	margin-bottom:15px;
+	border-bottom:1px solid #aaa;
+}
+.tab_body .actions{ margin:10px 0 0; }
+.tab_body .actions .pull-left{ margin-right:10px; }

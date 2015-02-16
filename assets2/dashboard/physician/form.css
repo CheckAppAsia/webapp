@@ -1,0 +1,56 @@
+.heading-box{
+	background:#2d7fb2;
+	color:#fff;
+}
+.heading-box h4{
+	margin:0;
+	font-size:14px;
+	font-weight:800;
+}
+
+.form-builder{
+	border:1px solid #2d7fb2;
+	background:#fff;
+}
+.form-item{ margin-bottom:4px; }
+.form-item .fa-times{
+	color:#bbb;
+	font-size:24px;
+	cursor:pointer; cursor:hand;
+}
+.form-item:hover .fa-times{ color:#888;}
+.form-item:hover .fa-times:hover{ color:#BD362F; }
+.form-item .question{
+	border:1px solid #ccc;
+	background:#fffeeb;
+	margin-bottom:2px;
+	padding:2px 5px;
+	font-size:18px;
+	color:#555;
+	width:100%;
+}
+.form-item:hover .question{ border:1px solid #999; }
+.form-item .answer.txt{ background:#f6f6f6; }
+.radio-option{ margin-top:3px; }
+.radio-option label{ display:block; }
+.radio-option input{ vertical-align:bottom; }
+.question_type{
+	padding:4px 0;
+	border:1px solid #ccc;
+	float:right;
+}
+.form-builder .submit.btn{
+	margin-left:10px;
+	height:auto;
+	padding:5px 10px;
+}
+.btn.add-form{
+	height:auto;
+	padding:5px 10px;
+	cursor:hand; cursor:pointer;
+	font-size:15px;
+}
+.btn.add-form .fa{ color:#BD362F!important; }
+.answer-option{ padding:5px 10px; }
+.answer-option label{ margin-right:10px; }
+.answer-option label input{ vertical-align:bottom; }

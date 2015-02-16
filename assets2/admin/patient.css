@@ -1,0 +1,65 @@
+.patient_div{
+	background:#fff;
+	margin:10px;
+	min-height:200px;
+}
+.patient_div h4{
+	font-size:21px;
+}
+
+.tab_head{ list-style:none; }
+.tab_head li{
+	float:left;
+	width:25%;
+	font-size:15px;
+	color:#fff;
+	background:#9ea7b3;
+	padding:10px 0 4px;
+	text-align:center;
+	cursor:hand;cursor:pointer;
+	-webkit-border-radius:12px 12px 0 0;
+	-moz-border-radius:12px 12px 0 0; 
+	border-radius:12px 12px 0 0;
+}
+.tab_head li.active{
+	background:#323A45;
+	color:#fff;
+}
+.tab_body{
+	clear:both;
+	background:#323A45;
+}
+.tab_body .content{
+	background:#fff;
+	min-height:150px;
+}
+.tab_body .content table{
+	width:100%;
+}
+.tab_body .content table thead td{
+	background:#9EA7B3;
+	color:#fff;
+	font-weight:700;
+	cursor:hand; cursor:pointer;
+}
+.tab_body .content table thead td .fa{
+	margin-right:5px;
+}
+.tab_body .content table td{
+	padding:5px;
+	border-right:1px solid #323A45;
+	border-bottom:1px solid #323A45;
+}
+.tab_body .content table tbody td{
+	font-size:14px;
+}
+.tab_body .content table tr.odd td{
+
+}
+.tab_body .content table tr.even td{
+	background:#D5DFEA;
+}
+.tab_body .content table tbody td a{
+	color:#2d7fb2;
+	margin:0 5px;
+}

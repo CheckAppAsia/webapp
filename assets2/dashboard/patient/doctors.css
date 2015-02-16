@@ -1,0 +1,32 @@
+.doctor_list{
+	background:#fff;
+	min-height:600px;
+}
+.doctor{ display:block; }
+.doctor .doctor_box{
+	border-bottom:1px solid #eee;
+	margin:5px;
+	padding:10px 0;
+}
+.doctor img{
+	float:left;
+	width:50px;
+	margin-right:10px;
+}
+.doctor a .fullname{
+	font-size:14px;
+	color:#2d7fb2;
+	display:block;
+	vertical-align:middle;
+	margin-bottom:3px;
+}
+.doctor a .clinic{
+	display:block;
+	font-size:12px;
+	color:#aaa;
+	line-height:20px;
+}
+.doctor a .clinic .fa{
+	vertical-align:baseline;
+	margin-right:2px;
+}

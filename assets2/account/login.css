@@ -1,0 +1,41 @@
+.login-box-container{
+	border:1px solid #ccc;
+	background:#fff;
+	max-width:740px;
+	margin:10px auto;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.error_box{
+	background:#BD362F;
+	color:#fff;
+	padding:10px 20px;
+	font-size:14px;
+	font-style:italic;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.error_box .fa{
+	font-size:18px;
+	margin-right:10px;
+	vertical-align:-2px;
+}
+
+
+.login-box{ margin-top:20px; }
+.form-row{
+	max-width:350px;
+	margin:0 auto 10px;
+}
+.form-row span{ font-size:13px; }
+.form-row a{
+	font-weight:700;
+	color:#277eb4;
+}
+.forgot{
+	font-size:12px;
+	font-weight:100;
+}

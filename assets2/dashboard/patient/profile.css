@@ -1,0 +1,21 @@
+.tab-content{ background:#fff; }
+
+.widget-head{ border-bottom:1px solid #eee; }
+
+/* DASHBOARD */
+.gender{
+	margin:0 15px 20px 0;
+	color:#555;
+}
+.gender input{ vertical-align:-1px; }
+
+
+/* View only */
+.book-btn{
+	height:auto;
+	width:100%;
+	padding:15px;
+	margin-bottom:10px;
+}
+.view-only .info{ font-size:14px; }
+.view-only .info label{ color:#9ab; }

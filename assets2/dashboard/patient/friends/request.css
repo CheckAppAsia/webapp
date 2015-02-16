@@ -1,0 +1,31 @@
+/* Pending list */
+.pending_list{
+	background:#fff;
+	min-height:600px;
+	padding:10px;
+}
+.request{
+	border-bottom:1px solid #eee;
+	padding:10px;
+	display:table;
+	width:100%;
+}
+.request .btn{
+	margin:20px 5px 0;
+}
+.request .avatar{
+	width:80px;
+	margin-right:10px;
+}
+.request .fullname{
+	color:#2D7FB2;
+	font-weight:700;
+	font-size:14px;
+	margin:20px 0 5px;
+	display:block;
+}
+.request .address{
+	color:#999;
+	font-size:12px;
+	display:block;
+}

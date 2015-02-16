@@ -1,0 +1,39 @@
+.vitals{
+	border:1px solid #e0e0e0;
+	margin-bottom:10px;
+}
+.form_group .form_text.half{ width:45%; }
+.bp_over{
+	font-size:21px;
+	margin:0 3px;
+}
+.pain_scale{
+	font-size:21px;
+	position:relative;
+	top:3px;
+	cursor:hand; cursor:pointer;
+}
+.add_vitals .fa{ margin-right:5px; }
+.vital_sign .form_button{ display:inline-block; }
+#upload_diagnostic{ display:none; }
+.upload_container{
+	border:1px solid #e0e0e0;
+	overflow:hidden;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.upload_container span{
+	padding:10px;
+	display:block;
+	font-size:14px;
+}
+.with_action span{
+	padding-top:7px;
+	display:inline-block;
+}
+.with_action .pre_fill{ display:none; }
+.with_action .btn{ margin:0 5px; }
+
+/* Lightbox */
+.pain_scale_box{ text-align:center; }

@@ -1,0 +1,127 @@
+.heading-box{
+	background:#2d7fb2;
+	color:#fff;
+}
+.heading-box h4{ margin:0; }
+.diagnosis-box{
+	border:1px solid #2d7fb2;
+	border-top:none;
+	background:#fff;
+}
+.patient-info{
+	margin-bottom:10px;
+}
+.patient-box img{
+	width:60px;
+	margin-right:5px;
+}
+.patient-box .patient-name{
+	font-size:24px;
+	color:#333;
+	margin-bottom:2px;
+	display:inline-block;
+}
+.patient-box .patient-name:hover{ color:#2d7fb2; }
+.clinic{
+	display:block;
+	margin-bottom:2px;
+	font-size:14px;
+}
+.arrival{
+	color:#999;
+	font-size:12px;
+}
+.arrival .fa{ margin-right:3px; }
+.patient-box hr{ margin:5px 0; }
+
+.diagnosis-form{ margin-bottom:20px; }
+.tab_nav{
+	position:relative;
+	top:1px;
+	background:#2F2E2C;
+	-webkit-border-radius:5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0; 
+	border-radius:5px 5px 0 0;
+	overflow:hidden;
+}
+.tab_nav li{
+	display:inline-block;
+	font-size:15px;
+	text-align:center;
+	padding:10px 15px;
+	color:#fff;
+	cursor:hand; cursor:pointer;
+}
+.tab_nav li.active{ background:#2D7FB2; }
+.diagnosis-form .input-tx, .diagnosis-form .form-control{ margin-bottom:10px; }
+.diagnosis-form .diagnose_text{
+	background:#fffeeb;
+	height:100px;
+	font-size:14px;
+	color:#000;
+}
+.diagnosis-form .tab{
+	border:1px solid #2F2E2C;
+	background:#fafafa;
+	padding:10px;
+}
+.diagnosis-form .tab .label{
+	display:block;
+	margin-bottom:10px;
+	color:#555;
+	font-size:18px;
+	border-bottom:1px dashed #ddd;
+	padding:4px 0;
+}
+.diagnosis-form .tab .time{
+	width:32%;
+	padding:5px 0;
+	border:1px solid #ccc;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px; 
+	border-radius:2px;
+}
+.diagnosis-form .tab .side_notes{
+	font-size:12px;
+	color:#777;
+	font-style:italic;
+	display:block;
+	margin:4px 0 10px;
+	line-height:130%;
+}
+.diagnosis-form .btn{
+	margin:5px 0 10px;
+}
+.diagnosis-form .patient_notes{
+	padding:10px 5px;
+	font-size:13px;
+	font-style:italic;
+}
+.diagnosis-form .tab.diagnosis label{
+	display:block;
+}
+.diagnosis-form .tab.diagnosis .input-tx.half{
+	width:45%;
+	vertical-align:middle;
+}
+.diagnosis-form .tab.diagnosis .splitter{
+	display:inline-block;
+	width:5%;
+	text-align:center;
+	font-size:21px;
+	line-height:18px;
+}
+.diagnosis-form .tab.diagnosis .add_more{
+	display:inline-block;
+	cursor:pointer; cursor:hand;
+	font-size:15px;
+	color:#2d7fb2;
+}
+
+
+.diagnosis-form.readonly .input-tx, .diagnosis-form.readonly .form-control{
+	border:none;
+	background:#fff;
+	cursor:default;
+}
+.diagnosis-form.readonly button.btn{ display:none; }

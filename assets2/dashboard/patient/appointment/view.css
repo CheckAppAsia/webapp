@@ -1,0 +1,53 @@
+.diagnosis-box{
+	border:1px solid #2d7fb2;
+	border-top:none;
+	background:#fff;
+}
+.patient-info{
+	margin-bottom:10px;
+}
+.patient-box img{
+	width:60px;
+	margin-right:5px;
+}
+.patient-box .patient-name{
+	font-size:24px;
+	color:#333;
+	margin-bottom:2px;
+	display:inline-block;
+}
+.patient-box .patient-name:hover{ color:#2d7fb2; }
+.clinic{
+	display:block;
+	margin-bottom:2px;
+	font-size:14px;
+}
+.arrival{
+	color:#999;
+	font-size:12px;
+}
+.arrival .fa{ margin-right:3px; }
+.patient-box hr{ margin:5px 0; }
+
+.diagnosis-data .label{
+	border-bottom:1px dashed #ccc;
+	display:block;
+	font-size:21px;
+	padding:3px 0;
+}
+.diagnosis-data .value{
+	line-height:140%;
+	font-size:14px;
+	margin:5px 0 30px;
+	display:block;
+}
+.diagnosis-data .value_list{
+	padding:5px 0;
+	margin-bottom:30px;
+}
+.diagnosis-data .value_list li{
+	display:block;
+	margin-bottom:7px;
+	font-size:14px;
+	line-height:140%;
+}

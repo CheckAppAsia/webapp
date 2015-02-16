@@ -1,0 +1,26 @@
+.login-box-container{
+	border:1px solid #ccc;
+	background:#fff;
+	max-width:740px;
+	margin:10px auto;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* Welcome View */
+.welcome{
+	margin-top:10px;
+	border:2px solid #277eb4;
+	line-height:150%;
+	font-style:italic;
+}
+.inner-all.welcome{ padding:30px 20px; }
+
+/* Extras */
+.icon-like{
+	color:#f56;
+	font-size:57px;
+	line-height:48px!important;
+}

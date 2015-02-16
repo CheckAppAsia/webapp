@@ -1,0 +1,44 @@
+.heading-box{
+	background:#2d7fb2;
+	color:#fff;
+}
+.heading-box h4{ margin:0; }
+
+.prequest-list {
+	margin-bottom:20px;
+	border:1px solid #2d7fb2;
+	border-top:none;
+	background:#f9fdf9;
+	
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-khtml-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+.physician-list {
+	margin-bottom:20px;
+	border:1px solid #2d7fb2;
+	border-top:none;
+	background:#f9fdf9;
+	
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-khtml-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+.physician-list .media{ border-bottom:1px solid #c1dce5; }
+.physician-list .media.odd{ background:#f7f7f7; }
+.physician-list .media.even{ background:#fcfcfc; }
+.heading-box .btn.action{ margin:5px; }
+.heading-box .btn.action, .physician-list .btn.action{
+	font-size:16px;
+	font-weight:100;
+	height:auto;
+	padding:5px 10px;
+}
+.physician-list .media-body p{
+	margin-bottom:10px;
+	font-style:italic;
+	font-size:15px;
+}

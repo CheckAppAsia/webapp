@@ -1,0 +1,37 @@
+.tab-content{ background:#fff; }
+
+.widget-head{ border-bottom:1px solid #eee; }
+
+/* DASHBOARD */
+.gender{
+	margin:0 15px 20px 0;
+	color:#555;
+}
+.gender input{ vertical-align:-1px; }
+
+/* EMERGENCY FORM */
+.emergency-form{ margin-top:10px; }
+.require-field{ background:#fcc; }
+.form-warning{
+    font-size:12px;
+    font-style:italic;
+    color:#f00;
+}
+.emergency-form .btn{ height:30px; }
+.error-box{
+    background:#fcc;
+    margin:10px 0;
+    border:1px solid #f66;
+    color:#f00;
+    font-size:14px;
+}
+
+/* View only */
+.book-btn{
+	height:auto;
+	width:100%;
+	padding:15px;
+	margin-bottom:10px;
+}
+.view-only .info{ font-size:14px; }
+.view-only .info label{ color:#9ab; }

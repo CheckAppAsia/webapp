@@ -1,0 +1,43 @@
+.patient-info-box{ background:#fff; }
+
+.measurements-box .col-md-4{ text-align:center; }
+.measurements-box .col-md-4 .box{ background:#fff; }
+
+.weight, .height{ padding-right:1px; }
+.weight, .height, .age{ font-size:13px; }
+
+.physical-activity{ padding-top:1px; }
+.physical-activity .col-md-6 .box{ background:#fff; }
+.blood-pressure{ padding-right:1px; }
+.physical-activity .media .strong{
+	font-size:13px;
+	line-height:140%;
+}
+
+
+
+
+.medical-records, .health-background, .immunizations, .diagnosis, .medical-history, .prescription, .clinical-notes{
+	background:#fff;
+}
+.tab-content .heading h4{ line-height:40px; }
+.tab-content .heading .btn{
+	padding:7px 10px;
+	height:auto;
+}
+
+.view-record-details{
+	height:auto;
+	padding:3px 6px;
+	border-color:#6bb4d5!important;
+}
+.tab-content .media-body h4{
+	font-size:14px;
+	font-weight:bold;
+}
+.tab-content .media-body ul{
+	font-size:13px;
+	line-height:145%;
+}
+
+.health-profile-data div{ margin-bottom:10px; }

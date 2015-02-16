@@ -1,0 +1,154 @@
+/*.navbar-brand { visibility:hidden; }*/
+
+.post-avatar {}
+.post-avatar > a {
+	display:inline-block;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	border-radius:100%;
+}
+.post-avatar > a > img {
+	display:inline-block;
+	width:100%;
+	height:auto;
+}
+
+#newsfeed {
+	padding:5px;
+	background:#fff;	
+}
+
+#newsfeed .post-form {
+	padding:5px;
+	position:relative;
+
+}
+
+#newsfeed .post-form .post-form-container {
+	border:1px solid #ccc;
+	display:inline-block;
+	width:100%;
+
+}
+
+#newsfeed .post-form .post-form-container textarea {
+	border:0;
+	margin:0;
+	padding:5px;
+	resize:none;
+	outline:none;
+	width:90%;
+	line-height:25px;
+}
+
+#newsfeed .post-form .post-form-container .post-submit {
+	width:5%;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	background:none;
+	color:#ccc;
+}
+
+#newsfeed .post-form .post-form-container .post-attachment {
+	width:5%;
+	position:relative;
+}
+
+#newsfeed .post-form .post-form-container .post-attachment > button {
+	width:100%;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	background:none;
+	color:#ccc;
+}
+
+#newsfeed .post-form .post-form-container textarea:focus + .post-submit,
+#newsfeed .post-form .post-form-container .post-submit:hover,
+#newsfeed .post-form .post-form-container .post-attachment > button:hover {
+	color:#999;
+}
+
+#newsfeed .feed { 
+	padding:5px 5px 25px;
+}
+
+#newsfeed .feed .post {
+	margin:0 0 10px;
+	padding:5px;
+	border:1px solid #ccc;
+	clear:both;
+}
+
+#newsfeed .feed .post > .post-avatar {
+	display:inline-block;
+	width:50px;
+	height:50px;
+	position:relative;
+	float:left;
+}
+
+#newsfeed .feed .post .post-content {
+	display:block;
+	width:100%;
+	padding-left:75px;
+}
+
+#newsfeed .feed .post .post-content .post-user-action {
+	line-height: 150%;
+}
+
+
+#newsfeed .feed .post .post-content .post-user-action a {
+	font-weight:bold;
+}
+
+#newsfeed .feed .post .post-content .post-user-action .post-time {
+	display:inline-block;
+	float:right;
+	font-size:95%;
+	color:#999;
+	position:relative;
+}
+
+#newsfeed .feed .post .post-content .post-message {
+	padding:5px 0;
+	font-size:98%;
+	color:#666;
+}
+
+#newsfeed .feed .post[post-type=connection] .post-content .post-follow {
+	padding:5px;
+	display:inline-block;
+	width:100%;
+	border:1px solid #ccc;
+}
+
+
+#newsfeed .feed .post[post-type=connection] .post-content .post-follow .post-avatar {
+	display:inline-block;
+	width:50px;
+	height:50px;
+	float:left;
+}
+
+#newsfeed .feed .post[post-type=connection] .post-content .post-follow .post-avatar + .post-user-followed {
+	padding-left:65px;
+}
+
+#newsfeed .feed .post[post-type=connection] .post-content .post-follow .post-user-followed .followed {
+	font-weight:bold;
+}
+
+#newsfeed .feed .post[post-type=connection] .post-content .post-follow .post-user-followed > button {
+	border:1px solid #ccc;
+	padding:0;
+	text-transform:uppercase;
+	font-size:65%;
+	width:70px;
+	height:25px;
+	line-height:23px;
+	float:right;
+}

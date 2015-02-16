@@ -1,0 +1,56 @@
+.navSeparator {
+	background:transparent !important;
+}
+
+.topnav {
+	margin:0px !important;
+}
+
+/* FROM PROFILE.CSS (topnav)
+--------------------------*/
+.tab-content{ background:#fff; }
+.row{ margin:0 -5px; }
+.form-control{
+	color:#333;
+	padding:6px 12px;
+	height:34px;
+	outline:0;
+}
+
+.widget-head{  }
+.add-btn-box{
+	background:#f8f8f8;
+}
+.add-btn-box .btn{
+	padding:10px 15px;
+	height:auto;
+}
+.contact-box{
+	overflow:hidden;
+	zoom:1;
+	margin-top:10px;
+}
+.contact-box .btn{
+	padding:8px 10px;
+	height:auto;
+}
+.contact-box .thumb{ margin-right:10px; }
+.contact-box .media-body p{
+	font-size:13px;
+	line-height:140%;
+}
+
+.make-editable{
+	height:auto;
+	padding:5px 10px;
+	margin:10px;
+}
+/* View only */
+.book-btn{
+	height:auto;
+	width:100%;
+	padding:15px;
+	margin-bottom:10px;
+}
+.view-only .info{ font-size:14px; }
+.view-only .info label{ color:#9ab; }

@@ -1,0 +1,72 @@
+.db_activities{
+	margin-bottom:20px;
+}
+.db_activities .previous, .db_activities .next{
+	min-height:250px;
+	background:#6ED0F6;
+	margin:15px 0;
+}
+.db_activities .previous .title, .db_activities .next .title{
+	color:#fff;
+	display:block;
+	text-align:center;
+	margin-bottom:20px;
+}
+.db_activities .previous b, .db_activities .next b{
+	padding:0 5px;
+	font-size:14px;
+}
+.db_activities .previous{
+	-webkit-border-radius:10px 0 0 10px;
+	-moz-border-radius:10px 0 0 10px;
+	border-radius:10px 0 0 10px;
+}
+.db_activities .today{
+	min-height:280px;
+	background:#fff;
+	position:relative;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+.db_activities .today .title{
+	color:#3484B4;
+	font-size:28px;
+	margin-bottom:25px;
+	display:block;
+	text-align:center;
+}
+.today .today_content{
+	display:block;
+}
+.today .today_content table{
+	font-size:14px;
+}
+.today .today_content table td{
+	padding:5px 0;
+	font-weight:700;
+}
+.today .today_content table .red{
+	color:#dd2222;
+}
+.today .navi_prev, .today .navi_next{
+	font-size:28px;
+	color:#277eb4;
+	margin-top:50px;
+}
+.today .navi_prev{ text-align:left; }
+.today .navi_next{ text-align:right; }
+.today_time{
+	position:absolute;
+	bottom:15px;
+	left:0;
+	width:100%;
+	font-size:15px;
+	text-align:center;
+	color:#72d0f4;
+}
+.db_activities .next{
+	-webkit-border-radius:0 10px 10px 0;
+	-moz-border-radius:0 10px 10px 0;
+	border-radius:0 10px 10px 0;
+}

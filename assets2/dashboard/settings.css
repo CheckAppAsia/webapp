@@ -1,0 +1,48 @@
+.settings_box{ background:#fff; }
+.settings_box ul li{ display:block; }
+
+.form_div{
+	margin-bottom:10px;
+	padding:10px 10px 20px;
+}
+.form_label{
+	color:#777;
+	font-size:14px;
+	font-weight:700;
+	display:block;
+	margin-bottom:4px;
+}
+.form_text{
+	width:100%;
+	border:2px solid #eaedf1;
+	display:block;
+	color:#555;
+	font-size:15px;
+	padding:8px 10px;
+	background:#fafafa;
+	margin-bottom:15px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.form_textarea{
+	border:2px solid #eaedf1;
+	padding:5px;
+	width:100%;
+	min-height:100px;
+	font-size:14px;
+	color:#555;
+	margin-bottom:15px;
+}
+.form_text.active, .form_textarea.active{
+	border:2px solid #2D7FB2;
+	background:#fff;
+}
+.form_select{
+	width:100%;
+	display:block;
+	padding:10px 0;
+	margin-bottom:15px;
+	color:#444;
+	border:2px solid #eaedf1;
+}

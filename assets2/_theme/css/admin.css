@@ -1,0 +1,12 @@
+.navbar-brand img{
+	vertical-align:-15px;
+	margin-right:5px;
+}
+.navbar-brand span{
+	color:#89c8e0;
+	font-size:21px;
+}
+
+.mid_content{
+	min-height:200px;
+}

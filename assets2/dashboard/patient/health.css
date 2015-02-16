@@ -1,0 +1,55 @@
+.medical_box{
+	text-align:center;
+	background:#fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.bdr_bottom{ border-bottom:2px solid #ccc; }
+.bdr_right{ border-right:2px solid #ccc; }
+
+.medical_box h4{
+	font-size:24px;
+	margin:0;
+	color:#333;
+}
+.medical_box h4 span{
+	font-size:14px;
+	color:#666;
+}
+.medical_box label{
+	font-size:12px;
+	color:#999;
+	font-weight:100;
+}
+.blood_type, .weight, .height, .allergies{ padding:25px 20px; }
+.allergies{ text-align:left; }
+.allergies span{
+	margin-bottom:5px;
+	font-size:18px;
+	display:block;
+}
+.allergies p{
+	color:#555;
+	font-size:12px;
+	line-height:135%
+}
+
+.blood_glucose, .cholesterol, .hemoglobin{ padding:25px 20px; }
+
+.health_value {
+	width:140px;
+	height:31px;
+	font-size:24px;
+	text-align:center;
+	border:0px none;
+	background:transparent;
+}
+.health_value:hover {
+	background:#ffc;
+}
+.health_updated {
+	font-size:10px;
+	color:#aaa;
+	margin:0px;
+}

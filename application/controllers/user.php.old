@@ -1,0 +1,272 @@
+<?php
+class User extends CA_Controller {
+	public $layout = 'col3';
+	
+	/* USER PROFILE: LANDING
+	Accessible via: /user/dragonjet
+	Currently, the social timeline of the user
+	-------------------------------------------------------*/
+	public function index($username){
+		$target = $this->getUserBasicInfo($username);
+		
+		if($target->type==1){
+			$topnav='patient'; 
+		}else if($target->type==2){ 
+			$topnav='physician'; 
+			$this->load->library('user_profile');
+			$target_physician_profile = $this->user_profile->get_physician_profile($target->id);
+		}else{ 
+			redirect(base_url()); 
+		}
+		
+		/* ajax.js and alert_r.js an be merged into global.js?
+		though if on global.js dont minify yet. -jet 06/12/2014 */
+		$this->carabiner->js('_util/ajax.js');
+		$this->carabiner->js('_util/alert_r.js');
+		
+		$this->carabiner->js('_util/moment.js');
+		$this->carabiner->css('_util/feed.css');
+		$this->carabiner->js('_util/feed.js');
+		
+		$this->carabiner->css('user/public.css');
+		$this->carabiner->js('user/public.js');
+		$this->carabiner->css('social/timeline.css');
+		$this->carabiner->js('social/timeline.js');
+		$this->render('social/timeline', array(
+			'target' => $target,
+			'topnav' => 'top_'.$topnav,
+			'username' => $target->username,
+			'target_physician_profile' => $target_physician_profile
+		));
+	}
+	
+	/* USER PROFILE: BASIC INFO
+	Accessible via: /user/dragonjet/profile
+	Shows basic information and contact details of the user
+	-------------------------------------------------------*/
+	public function profile($username){
+		$this->carabiner->js('_util/moment.js');
+		$userinfo = $this->getUserBasicInfo($username);
+		if($userinfo->type == 1){ $this->profilePatient($userinfo); }
+		else if($userinfo->type == 2){ $this->profilePhysician($userinfo); }
+		else if($userinfo->type == 3){  }
+		else{ redirect(base_url()); }
+	}
+	
+	/* USER PROFILE: MEDICAL
+	Accessible via: /user/dragonjet/medical
+	This should be transferred to Patient Controller
+	-------------------------------------------------------*/
+	public function medical($username){
+		/* wait, what? physician has medical profile?? -jet 06/12/2014 */
+		$userinfo = $this->getUserBasicInfo($username);
+		log_message('debug', '[user] medical userInfo = '.print_r($userinfo, true));
+		if($userinfo->type == 1){ $this->medicalPatient($userinfo); }
+		else if($userinfo->type == 2){ $this->medicalPhysician($userinfo); }
+		else if($userinfo->type == 3){  }
+		else{ redirect(base_url()); }
+	}
+	
+	/*--------------------------
+	PATIENT TABS
+	--------------------------*/
+	
+	private function profilePatient($userinfo){
+		$medprofile = $this->getPatients('patientprofile', array('id'=>$userinfo->id));
+		
+		/* Friend Finder or Checker*/
+		//$isFriend = $this->getUser('isFriend',array(
+		//	'user_id_1'=>$userinfo->id,
+		//	'user_id_2'=>$this->session->userdata('user_data')['id'],
+		//));
+		
+		$this->carabiner->css('user/public.css');
+		$this->carabiner->js('user/public.js');
+		$this->carabiner->css('user/patient/profile.css');
+		$this->carabiner->js('user/patient/profile.js');
+		$this->render('user/patient/profile', array(
+			'target' => $userinfo,
+			'userinfo' => $userinfo,
+			'medprofile' => $medprofile,
+			'topnav' => 'top_patient',
+			'right_chat' => true,
+			//'isFriend' => $isFriend['success'],
+			//'friend' => ($isFriend['friend'])?json_decode($isFriend['friend']):0,
+			'username' => $userinfo->username,
+		));
+	}
+
+	private function medicalPatient($userinfo){
+		$userinfo = $this->getUserBasicInfo($userinfo->username);
+		$medprofile = $this->getPatients('patientprofile', array('id'=>$userinfo->id));
+		
+		$this->carabiner->css('user/public.css');
+		$this->carabiner->js('user/public.js');
+		$this->carabiner->css('user/patient/profile.css');
+		$this->carabiner->js('user/patient/profile.js');
+		$this->render('user/patient/medical', array(
+			'target' => $userinfo,
+			'medprofile' => $medprofile,
+			'topnav' => 'top_patient',
+			'right_chat' => true,
+			'username' => $username,
+		));
+	}
+	
+	public function records($username){
+		$userinfo = $this->getUserBasicInfo($username);
+		
+		$this->carabiner->css('user/medical-records.css');
+		$this->carabiner->js('user/medical-records.js');
+		$this->render('patient/medical-records', array(
+			'userinfo' => $userinfo,
+		));
+	}
+
+	
+	public function friends($username) {
+		$userinfo = $this->getUserBasicInfo($username);
+		$data = array(
+			'user_id' => $this->session->userdata('user_data')['id'],
+		);
+		//$getFriends = $this->getPatients('getFriends', $data);
+		$getFriends = $this->getPatients('getFriends', array(
+			'user_id' => $this->self['id'],
+		));
+		
+		//print_r(json_decode($getFriends['data']));die();
+		//echo '<pre>';
+		//print_r(json_decode($getFriends['data']));die();
+		
+		//$this->carabiner->css('user/friends.css');
+		$this->carabiner->css('user/public.css');
+		$this->carabiner->js('user/public.js');
+		$this->carabiner->css('user/patient/friends.css');
+		$this->carabiner->js('user/patient/friends.js');
+		
+		$this->render('user/patient/friendlist',array(
+			'target' => $userinfo,
+			'friends' => json_decode($getFriends['data']),
+			'topnav' => 'top_patient',
+			'right_chat' => true,
+		), "col3");
+	}
+	
+	public function appointments($username) {
+		$userinfo = $this->getUserBasicInfo($username);
+		
+		$this->carabiner->css('user/appointments.css');
+		$this->render('user/patient/appointments',array(
+			'target' => $userinfo,
+			'username' => $username,
+			'topnav' => 'top_patient',
+			'right_chat' => true,
+		), "col3");
+	}
+	
+	
+	/*--------------------------
+	PHYSICIAN TABS
+	--------------------------*/
+	
+	private function profilePhysician($userinfo){
+	
+		$medprofile = $this->getPatients('physicianprofile', array('id'=>$userinfo->id));
+		
+		$this->carabiner->css('user/public.css');
+		$this->carabiner->js('user/public.js');
+		$this->carabiner->css('user/physician/profile.css');
+		$this->carabiner->js('user/physician/profile.js');
+		$this->render('user/physician/profile', array(
+			'target' => $userinfo,
+			'userinfo' => $userinfo,
+			'medprofile' => $medprofile,
+			'topnav' => 'top_physician',
+			'right_chat' => true,
+			'username' => $userinfo->username,
+		));
+	}
+	
+	private function medicalPhysician($userinfo){
+		$userinfo = $this->getUserBasicInfo($userinfo->username);
+		$medprofile = $this->getPatients('physicianprofile', array('id'=>$userinfo->id));
+
+		$this->carabiner->css('user/physician/profile.css');
+		$this->carabiner->js('user/physician/profile.js');
+		$this->render('user/physician/medical', array(
+			'target' => $userinfo,
+			'medprofile' => $medprofile,
+			'topnav' => 'top_physician',
+			'right_chat' => true,
+			'username' => $userinfo->username,
+		));
+	}
+	
+	public function patients($username){
+		$userinfo = $this->getUserBasicInfo($username);
+		
+		$this->carabiner->css('user/physician/patients.css');
+		$this->carabiner->js('user/physician/patients.js');
+		$this->render('physician/patients', array(
+			'userinfo' => $userinfo,
+		));
+	}
+	
+	public function book($username){
+		$userinfo = $this->getUserBasicInfo($username);
+		
+		$this->carabiner->css('user/book.css');
+		$this->carabiner->js('user/book.js');
+		$this->render('patient/book', array(
+			'userinfo' => $userinfo,
+		));
+	}
+	
+	public function colleagues($username){
+		$userinfo = $this->getUserBasicInfo($username);
+		
+		$this->carabiner->css('user/physician/colleagues.css');
+		$this->carabiner->js('user/physician/colleagues.js');
+		$this->render('physician/colleagues', array(
+			'userinfo' => $userinfo,
+		));
+	}
+	
+	public function record($username){
+		$userinfo = $this->getUserBasicInfo($username);
+		
+		$this->carabiner->css('user/physician/record.css');
+		$this->carabiner->js('user/physician/record.js');
+		$this->render('physician/record', array(
+			'userinfo' => $userinfo,
+		));
+	}
+	
+	public function appointment($username){
+		$userinfo = $this->getUserBasicInfo($username);
+		
+		$this->carabiner->css('user/physician/appointment.css');
+		$this->carabiner->js('user/physician/appointment.js');
+		$this->render('physician/appointment', array(
+			'userinfo' => $userinfo,
+		));
+	}
+	
+	/*--------------------------
+	UTILITIES
+	--------------------------*/
+	private function getUserBasicInfo($username){
+		
+		if(!$username){
+			redirect(base_url('user/'.$this->session->userdata('user_data')['username']));
+		}
+		
+		$user = $this->getUser('GetFullUserInfo', array(
+			'username' => $username,
+		));
+		$userinfo = json_decode($user['uprofile']);
+		
+		return $userinfo[0];
+	}
+	
+}

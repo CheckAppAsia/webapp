@@ -1,0 +1,52 @@
+.admin .sidebar{
+	padding:20px 0 0;
+}
+.admin .sidebar li{
+	padding:5px 0;
+	-webkit-border-radius:5px 0 0 5px;
+	-moz-border-radius:5px 0 0 5px;
+	border-radius:8px 0 0 8px;
+}
+.admin .sidebar li.active{  background:#f1f2f7; }
+.admin .sidebar li a{
+	color:#aaa;
+	padding-left:20px;
+}
+.admin .sidebar li.active a{ color:#2d7fb2; }
+.admin-content{
+	background:#f1f2f7;
+}
+
+/* Tables */
+.simple_table{
+	width:100%;
+	margin-bottom:20px;
+}
+.simple_table thead{
+	background:#9ea7b3;
+	color:#fff;
+	font-weight:100;
+	font-size:14px;
+}
+.simple_table thead td{
+	padding:8px 3px;
+}
+.simple_table tbody td{
+	background:#fff;
+	padding:7px 0;
+	border-bottom:1px solid #eaedf1;
+	border-right:1px solid #eaedf1;
+	font-size:13px;
+}
+.simple_table tbody td:last{
+	border-right:none;
+}
+.simple_table tbody td .txt{
+	padding:0 5px;
+}
+.simple_table tbody td a{
+	color:#2d7fb2;
+}
+.simple_table tbody tr:hover td{
+	background:#eaedf1;
+}

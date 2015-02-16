@@ -1,0 +1,42 @@
+.apnt_tabs{ background:#fff; }
+
+.record_ppage{
+	margin-bottom:10px;
+	font-size:14px;
+}
+.record_ppage select{ padding:5px; }
+
+.search_filter{
+	margin-bottom:10px;
+	font-size:14px;
+}
+.search_filter input{ padding:5px; }
+
+.showing{
+	font-size:14px;
+	margin:10px 0;
+}
+
+.simple_pagination{
+	margin:10px 0;
+}
+
+#apnt_today .empty{
+	font-size:15px;
+	font-style:italic;
+	padding:10px;
+	display:block;
+}
+#apnt_today .simple_table tbody select{
+	padding:5px;
+	margin:0;
+}
+#apnt_today .simple_table tbody a{ cursor:hand; cursor:pointer; }
+/* Lightbox */
+.diagnose_select a{
+	padding-left:30px;
+	display:block;
+	margin-bottom:10px;
+	font-size:21px;
+	color:#0FB1EF;
+}
